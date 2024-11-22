@@ -5,7 +5,11 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        Solution6();
+        Map<String, Integer> words = new HashMap<>();
+        words = Solution6();
+        for ( Map.Entry<String, Integer> record : words.entrySet()) {
+            System.out.println(" Key = " + record.getKey() + " " + "Value = " + record.getValue());
+        }
     }
 
     // return a list of the number of occurances of each word without punctuation and to lower case.
